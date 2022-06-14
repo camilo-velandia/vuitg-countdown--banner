@@ -1,3 +1,3 @@
-import Countdown from './components/Countdown'
+import CountdownBanner from './components/CountdownBanner'
 
-export default Countdown
+export default CountdownBanner
