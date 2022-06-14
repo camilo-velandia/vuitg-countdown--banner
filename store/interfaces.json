@@ -1,6 +1,7 @@
 {
   "countdown-banner":{
     "component":"Countdown",
-    "render":"client"
+    "render":"client",
+    "composition":"children"
   }
 }
