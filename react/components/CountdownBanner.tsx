@@ -12,14 +12,13 @@ const CountdownBanner = ({ children, finalDate }:Props) => {
 
   const CSS_HANDLES=["countdown_container"]
   const handles = useCssHandles(CSS_HANDLES)
-  // const finalDateFormatted = new Date(finalDate).getTime()
-  const finalDateFormatted = new Date('2022-06-19').getTime()
+  const finalDateFormatted = new Date(finalDate).getTime()
 
-  // if(!finalDate){
-  //   return (
-  //       <h2>No se ha establecido un fecha limite para el contador</h2>
-  //   );
-  // }
+  if(!finalDate){
+    return (
+        <h2>No se ha establecido un fecha limite para el contador</h2>
+    );
+  }
 
   return (
     <div className={`${handles.countdown_container} flex`}>
